@@ -8,11 +8,10 @@
   </head>
   <body>
     <h1>Hello, World!</h1>
-    <button onclick="myFunction()">submit to teamssdk</button>
+    <button onclick="myFunction()"> submit to teamssdk </button>
     <h4 id='date'></h4>
 
     <script>
-    import * as microsoftTeams from "@microsoft/teams-js";
     function myFunction() {
       console.log("hi");
       microsoftTeams.tasks.submitTask("sample submitting task");
