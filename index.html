@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="styles.css" />
+<script src="node_modules/@microsoft/teams-js@1.4.3/dist/MicrosoftTeams.min.js"></script>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My webpage!</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <button onclick="myFunction()">submit to teamssdk</button>
+    <h4 id='date'></h4>
+
+    <script>
+    function myFunction() {
+      document.getElementById("field2").value = document.getElementById("field1").value;
+      microsoftTeams.tasks.submitTask("sample submitting task");
+    }
+
+    </script>
+  </body>
+</html>
